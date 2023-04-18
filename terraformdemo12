@@ -1,12 +1,12 @@
-resource "azurerm_resource_group" "rang" {
+resource "azurerm_resource_group" "rg_jac" {
   name     = var.rang1
   location = var.loc
 }
 
-resource "azurerm_storage_account" "str23" {
-  name                     = var.stname2
-  resource_group_name      = azurerm_resource_group.rang.name
-  location                 = azurerm_resource_group.rang.location
+resource "azurerm_storage_account" "stoo23" {
+  name                     = var.namehomk
+  resource_group_name      = azurerm_resource_group.rg_jac.name
+  location                 = azurerm_resource_group.rg_jac.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
 
